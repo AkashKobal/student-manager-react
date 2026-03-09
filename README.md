@@ -70,7 +70,7 @@ Frontend
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/student-manager-react.git
+git clone https://github.com/AkashKobal/student-manager-react.git
 ```
 
 Navigate to the project folder
