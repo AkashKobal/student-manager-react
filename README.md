@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+# Student Manager React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple **React.js Students Dashboard** that demonstrates frontend CRUD operations without any backend.
+All data is managed using **React state and localStorage**, simulating a real-world full-stack workflow.
 
-## Available Scripts
+This project was built as part of a **Full Stack Assignment – Students Table** where the frontend handles all operations.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Dashboard Preview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Dashboard Screenshot](image.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Students table with columns:
 
-### `npm run build`
+  * Name
+  * Email
+  * Age
+  * Actions (Edit / Delete)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Add student form with validation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  * All fields required
+  * Valid email format
+  * Age must be a number
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Edit student
 
-### `npm run eject`
+  * Pre-filled form
+  * Same validation rules
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Delete student
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  * Confirmation dialog
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Search students by name or email
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Simulated loading state
 
-## Learn More
+* Export students to Excel
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  * Export full data
+  * Export filtered results
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* LocalStorage persistence
 
-### Code Splitting
+  * Data remains after page refresh
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Frontend
 
-### Making a Progressive Web App
+* React
+* TypeScript
+* Vite
+* React Hook Form
+* XLSX (Excel export)
+* Vanilla CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Clone the repository
 
-### Deployment
+```bash
+git clone https://github.com/yourusername/student-manager-react.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Navigate to the project folder
 
-### `npm run build` fails to minify
+```bash
+cd student-manager-react
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Run Development Server
+
+```bash
+npm run dev
+```
+
+Open in browser
+
+```
+http://localhost:5173
+```
+
+---
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+## Assignment Notes
+
+This implementation follows the assignment requirements:
+
+* Fully functional frontend
+* CRUD operations handled in React
+* No backend required
+* Data stored using localStorage
+* Excel export supported
+* Validation implemented
+* Loading state simulated
+
+---
+
+## Future Improvements
+
+Possible enhancements:
+
+* Pagination
+* Table sorting
+* Toast notifications
+* Better modal UI
+* Backend API integration
+* Authentication
+* Dark mode dashboard
